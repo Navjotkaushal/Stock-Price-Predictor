@@ -14,8 +14,8 @@ model = pickle.load(open("StockPrice.pkl", "rb"))
 # Streamlit Page Config
 # ----------------------------
 st.set_page_config(
-    page_title="📈 Tesla Stock Price Predictor",
-    page_icon="🚀",
+    page_title="Tesla Stock Price Predictor",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )

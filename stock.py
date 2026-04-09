@@ -114,7 +114,9 @@ x_new = pd.DataFrame([[open_price, low_price, high_price, volume, year, month, d
 if st.sidebar.button("🔮 Predict Stock Price"):
     prediction = model.predict(x_new)
     st.subheader("📌 Predicted Tesla Stock Price (Next Day):")
-    st.success(f"💰 ${prediction[0]:.2f}")
+    st.success(f"💰 ${prediction[0]:.2f} INR  |  ₹{prediction[0] * 86:.2f}")
+
+    
 
     # Save prediction
     save_prediction_to_db(x_new, prediction)
